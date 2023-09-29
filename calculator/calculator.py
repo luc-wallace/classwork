@@ -1,7 +1,9 @@
 CHOICES = ["add", "subtract", "multiply", "divide", "remainder"]
 
+
 def display_operators():
     print(f"Valid operators: {', '.join(CHOICES)}")
+
 
 def get_operator():
     while True:
@@ -10,21 +12,26 @@ def get_operator():
             return choice
         print("Invalid operation!")
 
+
 def add(num1, num2):
     return num1 + num2
+
 
 def subtract(num1, num2):
     return num1 - num2
 
+
 def multiply(num1, num2):
-    
     return num1 * num2
+
 
 def divide(num1, num2):
     return num1 / num2
 
+
 def remainder(num1, num2):
     return num1 % num2
+
 
 def get_operands():
     operands = []
@@ -40,8 +47,10 @@ def get_operands():
 
     return (*operands,)
 
+
 def display(num1, num2, operator, result):
     print(f"{num1} {operator} {num2} = {result}")
+
 
 def main():
     display_operators()
@@ -55,7 +64,7 @@ def main():
         symbol = "+"
     elif operator == "subtract":
         process = subtract
-        symbol = "-"   
+        symbol = "-"
     elif operator == "multiply":
         process = multiply
         symbol = "*"
@@ -68,6 +77,7 @@ def main():
 
     result = process(*operands)
     display(*operands, symbol, result)
+
 
 if __name__ == "__main__":
     main()
