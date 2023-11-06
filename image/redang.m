@@ -1,0 +1,11 @@
+close all;
+clear all;
+clc;
+W = imread("Redang.jpeg");
+figure(1);
+image(W);
+C = W;
+C(:, :, 1) = 0.5 * C(:, :, 1);
+figure(2);
+image(C);
+imwrite(C, "RedangChangedMore.jpeg");
