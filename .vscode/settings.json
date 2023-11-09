@@ -4,5 +4,4 @@
     },
 
     "editor.formatOnSave": true,
-    "python.formatting.provider": "none"
 }
