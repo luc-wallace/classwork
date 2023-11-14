@@ -19,12 +19,10 @@ while True:
     if month not in months:
         print("Invalid month!")
         continue
-    
+
     day = int(input("Enter day of the month: "))
     if 1 <= day <= days[months.index(month)]:
         break
     print("Invalid day of month!")
 
 print(f"Valid data: {day} of {month}")
-
-
