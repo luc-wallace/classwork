@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="ui-container">
+      <div class="player-status">
+        <h1 class="status">Your turn</h1>
+        <div class="board-container" id="board-container"></div>
+        <div class="action-row">
+          <button class="add-row" onclick="addRow()">Add random row</button>
+          <button class="update-opponent" onclick="updateOpponentStatus()"></button>
+        </div>
+      </div>
+      <div class="opponent-status">
+        <h1>Opponent</h1>
+      </div>
+    </div>
+  </body>
+</html>
